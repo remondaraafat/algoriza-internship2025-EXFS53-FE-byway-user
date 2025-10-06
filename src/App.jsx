@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import Nav from './Componenets/Nav.jsx'
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,Navigate } from "react-router-dom";
 import Footer from "./Componenets/Footer.jsx";
 // import Home from './Componenets/HomeComponent/Home.jsx';
  import SignIn from './pages/SignIn.jsx';
@@ -17,7 +16,7 @@ function App() {
     <div className="pt-12">
       <Nav />
       <Routes>
-        <Route path="/" element={<Courses />} />
+        <Route path="/" element={<Navigate to="/courses" replace />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path='/courses' element={<Courses/>}/>
