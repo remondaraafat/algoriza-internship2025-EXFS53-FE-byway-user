@@ -5,4 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(),
     tailwindcss()],
+    base: '/algoriza-internship2025-EXFS53-FE-byway-user'
 })
