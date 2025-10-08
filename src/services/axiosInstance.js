@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://remondaraafat-001-site1.rtempurl.com/',
+  baseURL: 'https://remondaraafat-001-site1.rtempurl.com/',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
