@@ -56,9 +56,10 @@ function Nav() {
     <nav className="bg-white border-b border-gray-300 px-6 py-3 flex items-center fixed top-0 left-0 right-0 z-20 shadow-sm">
       {/* Logo */}
       <div className="mr-6 flex-shrink-0">
-        <a href="/courses">
+        <Link
+              to="/courses">
         <img src={Logo} alt="Logo" className="h-10 w-auto" />
-        </a>
+        </Link>
       </div>
 
       {/* Search bar */}
